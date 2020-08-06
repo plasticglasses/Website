@@ -17,9 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 #my project views
-from projects.views import project_view
+from projects.views import project_view, title_card_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('projects/', project_view, name='projects')
+    path('projects/', project_view, name='projects'),
+    path('titlecard/', title_card_view, name='cardimage'),
 ]
