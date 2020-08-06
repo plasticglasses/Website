@@ -16,6 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+#my project views
+from projects.views import project_view
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('projects/', project_view, name='projects')
 ]
